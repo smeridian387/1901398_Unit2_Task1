@@ -19,6 +19,7 @@ public:
 	void ThrowBull();
 
 	bool HasWon();
+	void SetWon(bool won_);
 	void SetSuccessRate(int SR_);
 
 private:
@@ -34,9 +35,7 @@ private:
 	int score = 501;// player score
 	int scoreAtStart; //score at the start of the turn
 	int throwsThisGame = 0;
-	int numOfBulls = 0;
-	int totalNumOfBulls = 0;
-	int gamesWon = 0;
+	int legsWon = 0;
 	bool dartLanded = false;//has the dart landed in the board this throw?
 	bool hasWon = false;
 	bool bust = false;
